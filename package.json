@@ -5,7 +5,10 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "prepare": "husky"
+    "prepare": "husky",
+    "start:staging": "NODE_ENV=staging node src/index.js",
+    "start:preprod": "NODE_ENV=preprod node src/index.js",
+    "start:prod": "NODE_ENV=prod node src/index.js"
   },
   "repository": {
     "type": "git",
